@@ -10,7 +10,6 @@ class Ostoskori:
         lkm = 0
         for ostos in self.ostoskori:
             lkm += ostos.lukumaara()
-
         return lkm
         # kertoo korissa olevien tavaroiden lukumäärän
         # eli jos koriin lisätty 2 kpl tuotetta "maito", tulee metodin palauttaa 2
@@ -41,7 +40,7 @@ class Ostoskori:
         # poistaa tuotteen
 
     def tyhjenna(self):
-        pass
+        self.ostoskori = []
         # tyhjentää ostoskorin
 
     def ostokset(self):
